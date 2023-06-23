@@ -16,8 +16,13 @@ let testObject = {
 }
 
 myFunction = (object, property) => {
+
 	delete object[property];
+//deletes the designated property of the identified object
+
 	return object;
+//returns the object without the deleted property
 }
 
 console.log(myFunction(testObject, 'basketball'));
+//calls the function using the test object and identifies the property to be deleted
